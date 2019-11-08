@@ -1,4 +1,4 @@
-package io.vertx.starter;
+package io.mmcgaha.words;
 
 import io.vertx.core.AbstractVerticle;
 
