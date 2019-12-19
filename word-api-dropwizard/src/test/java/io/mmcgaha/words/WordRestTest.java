@@ -5,17 +5,16 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
- * Unit test for simple App.
+ * Unit tests for Words
  */
-public class AppTest 
-    extends TestCase
+public class WordRestTest extends TestCase
 {
     /**
      * Create the test case
      *
      * @param testName name of the test case
      */
-    public AppTest(String testName)
+    public WordRestTest(String testName)
     {
         super(testName);
     }
@@ -35,4 +34,7 @@ public class AppTest
     {
         assertTrue(true);
     }
+    
+    
+    
 }

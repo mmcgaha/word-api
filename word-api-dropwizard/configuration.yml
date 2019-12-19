@@ -1,0 +1,20 @@
+server:
+  maxThreads: 20
+  applicationContextPath: /v1
+  applicationConnectors:
+    - type: http
+      port: 8080
+  adminConnectors:
+    - type: http
+      port: 8081
+
+couchbase:
+  nodes: ['scbn-dev-5.devlab.ibm.com']
+  username: "admin"
+  password: "password"
+  bucket: "SAP"
+  persistTo: "NONE"
+  replicateTo: "NONE"
+  environment: "jsmithe_dev"
+  application: "sap"
+  timeout: 10000

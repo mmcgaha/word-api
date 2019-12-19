@@ -1,4 +1,4 @@
-package com.mmcgaha.words;
+package io.mmcgaha.words;
 
 import org.junit.After;
 import org.junit.Before;
