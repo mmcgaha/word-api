@@ -1,7 +1,26 @@
-**/target/
-**/nodes/
-**/*.orig
-**/.project
-**/.settings
-**/.classpath
-**/*.ppf
+# Eclipse
+.classpath
+.project
+.settings/
+.pydevproject
+.factorypath
+.checkstyle
+
+.build-executable
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+logs/
+target/
+
+*.orig
+nohup.out
+*.log
