@@ -3,6 +3,7 @@ package io.mmcgaha.wordly.service;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
+import io.mmcgaha.wordly.service.resources.WordsResource;
 
 public class WordlyApplication extends Application<WordlyConfiguration> {
 
@@ -23,6 +24,10 @@ public class WordlyApplication extends Application<WordlyConfiguration> {
     @Override
     public void run(WordlyConfiguration configuration,
                     Environment environment) {
-        // nothing to do yet
+        final WordsResource resource = new WordsResource(
+                configuration.getTemplate(),
+                configuration.getDefaultName()
+        );
+        environment.jersey().register(resource);
     }
 }
