@@ -11,7 +11,7 @@ import javax.ws.rs.core.Response;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicLong;
 
-@Path("/hello")
+@Path("/api/v1/words")
 @Produces(MediaType.APPLICATION_JSON)
 public class WordsResource {
 
@@ -24,6 +24,14 @@ public class WordsResource {
         this.defaultName = defaultName;
         this.counter = new AtomicLong();
     }
+
+    @GET
+    @Timed
+    public Response sayHello(@QueryParam("name") Optional<String> name) {
+        final String value = String.format(template, name.orElse(defaultName));
+        return Response.ok("hello " + value).build();
+    }
+
 
     @GET
     @Timed
