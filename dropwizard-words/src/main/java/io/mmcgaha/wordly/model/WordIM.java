@@ -8,7 +8,7 @@ import io.mmcgaha.wordly.tools.MMStyle;
 
 @MMStyle
 @Value.Immutable
-public interface WordIF {
+public interface WordIM {
 
     long getWordId();
 

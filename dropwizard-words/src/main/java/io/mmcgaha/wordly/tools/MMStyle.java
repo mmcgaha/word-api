@@ -16,7 +16,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 @Style(
     get = {"is*", "get*"},
     init = "set*",
-    typeAbstract = {"Abstract*", "*IF"},
+    typeAbstract = {"Abstract*", "*IM"},
     typeImmutable = "*",
     optionalAcceptNullable = true,
     forceJacksonPropertyNames = false,
