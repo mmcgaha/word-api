@@ -1,19 +1,12 @@
 package io.mmcgaha.wordly.data;
 
+import com.google.common.collect.Maps;
+import io.mmcgaha.wordly.model.Word;
+
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.stream.Collectors;
-
-import org.immutables.value.internal.$guava$.collect.$Maps;
-
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-
-import io.mmcgaha.wordly.model.Word;
 
 public class Words implements WordsDao {
 
@@ -26,6 +19,11 @@ public class Words implements WordsDao {
   @Override
   public Optional<Word> get(long id) {
     return Optional.of(words.get(id));
+  }
+
+  @Override
+  public String get(int id) {
+    return null;
   }
 
   @Override

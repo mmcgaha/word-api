@@ -1,10 +1,7 @@
 package io.mmcgaha.wordly.model;
 
-import java.util.List;
-
-import org.immutables.value.Value;
-
 import io.mmcgaha.wordly.tools.MMStyle;
+import org.immutables.value.Value;
 
 @MMStyle
 @Value.Immutable
@@ -18,8 +15,8 @@ public interface DefinitionIM {
 
     String getSampleSentence();
 
-    List<Word> getSynonyms();
+    //List<Word> getSynonyms();
 
-    List<Word> getAntonyms();
+    //List<Word> getAntonyms();
 
 }
